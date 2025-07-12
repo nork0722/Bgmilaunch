@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Launch BGMI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+      font-family: sans-serif;
+    }
+    button {
+      background: #ffbc00;
+      color: #000;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #e0a800;
+    }
+  </style>
+</head>
+<body>
+  <h1>Launch BGMI</h1>
+  <p>Tap the button below to open BGMI on your device.</p>
+  <button onclick="launchBGMI()">Open BGMI</button>
+
+  <script>
+    function launchBGMI() {
+      window.location.href = "intent://launch/#Intent;scheme=android-app;package=com.pubg.imobile;end;";
+    }
+  </script>
+</body>
+</html>
